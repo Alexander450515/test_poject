@@ -12,6 +12,12 @@
 {% verbatim %}
 <div class="container" id="orders_app">
 
+    <div class="btn btn-success btn-lg" v-for="order in orders">
+        Description: {{ order.description }}
+        <br>
+        Amount: {{ order.amount }}
+    </div>
+
 
 </div>
 
