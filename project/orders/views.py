@@ -12,3 +12,7 @@ def orders_page(request):
 class OrderView(ModelViewSet):
     queryset = SalesOrder.objects.all()  # View будет выводить все объекты SalesOrder, которые есть
     serializer_class = OrderSerializer
+
+
+def orders_app(request):
+    return render(request, 'main_app.html')
